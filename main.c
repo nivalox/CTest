@@ -1,15 +1,21 @@
 #include <stdio.h>
 
 int kirk = 69;
+char allah[] = "akbar";
 
-int printfunc(int var) {
+void printint(int var) {
   printf("%d\n", var);
-  return 0;
+}
+
+void printstr(const char *var) {
+  printf("%s\n", var);
 }
 
 int main(void) {
-  printfunc(67);
+  printint(67);
+  printstr("gilbert");
   printf("%d\n", kirk);
+  printf("%s\n", allah);
   return 0;
 }
 
